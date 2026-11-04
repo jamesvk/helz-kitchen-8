@@ -49,8 +49,8 @@ When James is writing core logic, give hints first. Do not write the solution un
 ## Hosting
 
 - Draft: Netlify preview link. Do not use Vercel's free plan, because this is a commercial site.
-- Final: GoDaddy Web Hosting (cPanel), uploaded to `public_html`.
-- The domain has not been purchased yet. Do not hard-code a domain.
+- Final host: undecided. Do not add hosting-specific files yet.
+- Planned domain: helzkitchen8.com (not purchased yet). Do not hard-code it.
 
 ## Pages
 
@@ -75,7 +75,10 @@ Adding a FAQ, dish, testimonial, or social link should be a one-entry change. So
 
 ## Brand
 
-- Name: Helz Kitchen. Never add the 8 to the brand name or page text.
+- Business name: Helz Kitchen. Do not add the 8 to the brand name.
+- The 8 appears only in the domain and email address.
+- Refer to the owner as Helena. The Meet Helz section must clearly say she is the chef behind the business.
+- When we build the app, store the business name in one shared file so changing it takes one edit.
 - Email: helzkitchen8@gmail.com
 - Phone: 917-500-9033
 - Descriptor: Russian Fusion
@@ -89,6 +92,7 @@ Use the gradient for accents only. Show food on dark navy or ivory backgrounds. 
 ## Placeholder rules
 
 - Lorem ipsum is allowed for FAQ answers and About copy in the draft.
+- FAQ answers, About copy, and the service area must be confirmed by Helena before launch. Do not launch until she does.
 - Current food photos are temporary.
 - Do not invent dish names, prices, service areas, policies, credentials, or personal details.
 - Never create fake testimonials.
