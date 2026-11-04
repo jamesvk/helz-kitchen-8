@@ -9,5 +9,14 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return <Welcome />;
+  return (
+    <>
+      {/* TEMPORARY gradient + font test block. Remove when the real hero is built. */}
+      <section className="bg-card-gradient flex min-h-[50vh] flex-col items-start justify-center gap-4 p-8 text-ivory">
+        <p className="font-logo text-6xl font-normal">Helz Kitchen</p>
+        <p className="font-logo text-xl">Tradition Twisted Deliciously</p>
+      </section>
+      <Welcome />
+    </>
+  );
 }

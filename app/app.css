@@ -1,8 +1,33 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
+  /* Poppins is the default font for all text; the logo font is used for the logo and tagline */
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-logo: "Fruktur", ui-serif, Georgia, serif;
+
+  /* Brand colors, eyeballed from Helena's business card (see CLAUDE.md Design) */
+  --color-navy: #1b2466;
+  --color-indigo: #3a3f9e;
+  --color-violet: #7b5fc0;
+  --color-blue: #1c6e85;
+  --color-aqua: #5cc8c4;
+  --color-lime: #c9e88a;
+  --color-ivory: #fbf8ee;
+  --color-teal: #0e7c8a;
+  --color-deep-teal: #14566e;
+}
+
+/* Reusable card gradient: deep teal base with lime and aqua glows on the right.
+   Keep ivory text on the darker left side. */
+.bg-card-gradient {
+  background-color: var(--color-deep-teal);
+  background-image:
+    radial-gradient(at 80% 75%, var(--color-lime) 0, transparent 40%),
+    radial-gradient(at 97% 15%, var(--color-aqua) 0, transparent 38%),
+    radial-gradient(at 58% 5%, var(--color-violet) 0, transparent 24%),
+    radial-gradient(at 6% 95%, var(--color-navy) 0, transparent 42%),
+    radial-gradient(at 30% 0%, var(--color-blue) 0, transparent 45%);
 }
 
 html,

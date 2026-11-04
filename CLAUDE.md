@@ -85,9 +85,23 @@ Adding a FAQ, dish, testimonial, or social link should be a one-entry change. So
 - Tagline: Tradition Twisted Deliciously
 - Secondary line: Your Event, My Menu (awaiting her confirmation for site use)
 - Look: blue, teal, lime, and violet gradient with ivory text
-- Fonts: TBD. Ask James before choosing them.
+- Fonts: Fruktur for the logo and tagline, confirmed by Helena. Poppins for all other text. Use Poppins Light only for short descriptor lines like "Russian Fusion."
 
-Use the gradient for accents only. Show food on dark navy or ivory backgrounds. Text must stay readable and never sit directly on the lime areas without an overlay.
+## Design
+- Modern, sleek, and playful, but still appropriate for a catering company. The site must clearly match Helena's business card.
+- Use jhollandergourmet.com and oneillscatering.net only as layout references. Do not copy their text, images, or formal style.
+- Colors are approximate, adjusted by eye from photos of her card: deep navy #1B2466, indigo #3A3F9E, violet #7B5FC0, blue #1C6E85, aqua #5CC8C4, lime #C9E88A, ivory #FBF8EE, deep teal #14566E. Button teal: #0E7C8A.
+- The card gradient is mostly teal and green, with small navy and violet accents. Build it with layered CSS radial gradients, not a straight two-color fade. Define it once as a reusable class.
+- Use the gradient in the hero, the closing band, the footer, and a thin line under the header.
+- Text on the gradient is ivory and must sit on its darker teal or navy areas, never on lime or aqua.
+- Meet Helz uses a deep teal background with ivory text.
+- Food sections use an ivory background with navy text. Never place food directly on the gradient, except inside a framed photo.
+- Buttons use the button teal with ivory text.
+- Use large headlines, generous spacing, rounded photo corners, and a slim header with a visible tap-to-call number.
+- Mention Bucks County in the page text.
+- Home order: gradient hero with framed food photo, Meet Helz, three event cards, How It Works, Sample Dishes, gradient closing band.
+- Event cards: Private Parties, Office Lunches, Custom Requests. These are drafts until Helena confirms them.
+- Main button text: Tell me about your event.
 
 ## Placeholder rules
 
