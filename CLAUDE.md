@@ -85,10 +85,11 @@ Adding a FAQ, dish, testimonial, or social link should be a one-entry change. So
 - Tagline: Tradition Twisted Deliciously
 - Secondary line: Your Event, My Menu (awaiting her confirmation for site use)
 - Look: blue, teal, lime, and violet gradient with ivory text
-- Fonts: Fruktur for the logo and tagline, confirmed by Helena. Poppins for all other text. Use Poppins Light only for short descriptor lines like "Russian Fusion."
+- Fonts: Helena used Fruktur and Poppins Light on her business card. Use Fruktur only for the hero name, tagline, and logo. Use Poppins for all other text, with Poppins Light for short descriptor lines like "Russian Fusion."
 
 ## Design
 - Modern, sleek, and playful, but still appropriate for a catering company. The site must clearly match Helena's business card.
+- Keep one left edge down the whole page. Match the card's fonts and colors, but do not copy its centered layout.
 - Use jhollandergourmet.com and oneillscatering.net only as layout references. Do not copy their text, images, or formal style.
 - Colors are approximate, adjusted by eye from photos of her card: deep navy #1B2466, indigo #3A3F9E, violet #7B5FC0, blue #1C6E85, aqua #5CC8C4, lime #C9E88A, ivory #FBF8EE, deep teal #14566E. Button teal: #0E7C8A.
 - The card gradient is mostly teal and green, with small navy and violet accents. Build it with layered CSS radial gradients, not a straight two-color fade. Define it once as a reusable class.
@@ -96,7 +97,7 @@ Adding a FAQ, dish, testimonial, or social link should be a one-entry change. So
 - Text on the gradient is ivory and must sit on its darker teal or navy areas, never on lime or aqua.
 - Meet Helz uses a deep teal background with ivory text.
 - Food sections use an ivory background with navy text. Never place food directly on the gradient, except inside a framed photo.
-- Buttons use the button teal with ivory text.
+- Buttons use the button teal with ivory text on ivory sections. Use an ivory button with navy text on gradients.
 - Use large headlines, generous spacing, rounded photo corners, and a slim header with a visible tap-to-call number.
 - Mention Bucks County in the page text.
 - Home order: gradient hero with framed food photo, Meet Helz, three event cards, How It Works, Sample Dishes, gradient closing band.
@@ -114,7 +115,7 @@ Adding a FAQ, dish, testimonial, or social link should be a one-entry change. So
 
 ## Quality
 
-- Mobile first
+- Mobile first. Unprefixed classes are the phone layout at 402 wide. Put desktop-only changes behind `md:` or larger. Do not use fixed pixel widths.
 - Semantic HTML with visible keyboard focus
 - Useful `alt` text on images
 - A unique title and description for every page

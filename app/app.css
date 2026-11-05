@@ -18,23 +18,31 @@
   --color-deep-teal: #14566e;
 }
 
-/* Reusable card gradient: deep teal base with lime and aqua glows on the right.
-   Keep ivory text on the darker left side. */
+/* Reusable card gradient. Mobile-first: the phone version keeps the lime/aqua
+   glows in the bottom-right and off the right edge so ivory text stays readable
+   on the darker left. The md: version restores the wider desktop spread. */
 .bg-card-gradient {
   background-color: var(--color-deep-teal);
   background-image:
-    radial-gradient(at 80% 75%, var(--color-lime) 0, transparent 40%),
-    radial-gradient(at 97% 15%, var(--color-aqua) 0, transparent 38%),
-    radial-gradient(at 58% 5%, var(--color-violet) 0, transparent 24%),
-    radial-gradient(at 6% 95%, var(--color-navy) 0, transparent 42%),
-    radial-gradient(at 30% 0%, var(--color-blue) 0, transparent 45%);
+    radial-gradient(circle at 92% 92%, var(--color-lime) 0, transparent 62%),
+    radial-gradient(circle at 104% 30%, var(--color-aqua) 0, transparent 52%),
+    radial-gradient(circle at 78% 0%, var(--color-violet) 0, transparent 34%),
+    radial-gradient(circle at 0% 100%, var(--color-navy) 0, transparent 44%),
+    radial-gradient(circle at 20% 0%, var(--color-blue) 0, transparent 50%);
+}
+
+@media (min-width: 768px) {
+  .bg-card-gradient {
+    background-image:
+      radial-gradient(at 80% 75%, var(--color-lime) 0, transparent 40%),
+      radial-gradient(at 97% 15%, var(--color-aqua) 0, transparent 38%),
+      radial-gradient(at 58% 5%, var(--color-violet) 0, transparent 24%),
+      radial-gradient(at 6% 95%, var(--color-navy) 0, transparent 42%),
+      radial-gradient(at 30% 0%, var(--color-blue) 0, transparent 45%);
+  }
 }
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
-
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+  @apply bg-ivory text-navy;
 }
